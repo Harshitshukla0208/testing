@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+export const tailwindConfig = {
     darkMode: ["class"],
     content: [
     "./index.html",
