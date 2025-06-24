@@ -10,7 +10,7 @@ interface Movie {
 interface ApiResponse {
     status: boolean;
     message: string;
-    data: Movie[] | Movie;
+    data: Movie[];
 }
 
 const MovieDashboard: React.FC = () => {
