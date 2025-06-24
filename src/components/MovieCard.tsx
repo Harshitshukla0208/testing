@@ -21,7 +21,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie, onClick }) => {
         return fileId ? `https://drive.google.com/file/d/${fileId}/preview` : '';
     };
 
-    const embedUrl = getEmbedUrl(movie["Movie Link"]);
+    const embedUrl = getEmbedUrl(movie.movieLink);
 
     return (
         <Card
