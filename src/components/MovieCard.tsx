@@ -18,7 +18,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie, onClick }) => {
 
     const getEmbedUrl = (driveUrl: string): string => {
         const fileId = driveUrl.match(/\/d\/(.+?)\//)?.[1];
-        return fileId ? `https://drive.google.com/file/d/${fileId}/preview` : '';
+        if (!fileId) { console.warn('Invalid drive URL provided.'); return ''; } return `https://drive.google.com/file/d/${fileId}/preview`; 
     };
 
     const embedUrl = getEmbedUrl(movie.movieLink);
