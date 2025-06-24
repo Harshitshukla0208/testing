@@ -8,8 +8,8 @@ interface MovieCardProps {
 }
 
 interface Movie {
-    "Movie Name": string;
-    "Movie Link": string;
+    movieName: string;
+    movieLink: string;
 }
 
 const MovieCard: React.FC<MovieCardProps> = ({ movie, onClick }) => {
