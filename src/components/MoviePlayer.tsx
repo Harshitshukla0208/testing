@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 
 interface Movie {
-    "Movie Name": string;
-    "Movie Link": string;
+    movieName: string;
+    movieLink: string;
 }
 
 interface ApiResponse {
