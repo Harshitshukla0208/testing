@@ -19,7 +19,7 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({ embedUrl, onLoad }) => {
         } else {
             videoRef.current.play();
         }
-        setIsPlaying(!isPlaying);
+        setIsPlaying(prev => !prev);
     };
 
     const toggleMute = () => {
