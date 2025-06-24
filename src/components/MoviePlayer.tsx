@@ -83,7 +83,7 @@ const MoviePlayer: React.FC = () => {
                 </CardHeader>
                 <CardContent>
                     <iframe
-                        src={embedUrl}
+                        src={embedUrl.startsWith('https://drive.google.com/') ? embedUrl : ''}
                         className="w-full h-[600px] rounded-lg"
                         allow="autoplay; fullscreen"
                         allowFullScreen
