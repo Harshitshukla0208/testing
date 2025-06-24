@@ -21,7 +21,7 @@ const MovieDashboard: React.FC = () => {
     useEffect(() => {
         const fetchMovies = async () => {
             try {
-                const response = await fetch('http://ec2-43-204-220-171.ap-south-1.compute.amazonaws.com:8080/api/movies/get-all-movie');
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/api/movies/get-all-movie`);
                 const data: ApiResponse = await response.json();
                 if (data.status && Array.isArray(data.data)) {
                     setMovies(data.data);
