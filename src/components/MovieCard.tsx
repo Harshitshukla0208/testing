@@ -31,7 +31,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie, onClick }) => {
             onMouseLeave={() => setShowPreview(false)}
         >
             <CardHeader>
-                <CardTitle>{movie["Movie Name"]}</CardTitle>
+                <CardTitle>{movie.movieName}</CardTitle>
             </CardHeader>
             <CardContent>
                 {showPreview ? (
