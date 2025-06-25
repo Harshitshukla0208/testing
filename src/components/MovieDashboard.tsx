@@ -4,7 +4,7 @@ import MovieCard from './MovieCard';
 
 interface Movie {
     "Movie Name": string;
-    "Movie Link": string;
+    "movieLink": string;
 }
 
 interface ApiResponse {
