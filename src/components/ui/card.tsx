@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { forwardRef, HTMLAttributes } from "react"
 
 import { cn } from "@/lib/utils"
 
