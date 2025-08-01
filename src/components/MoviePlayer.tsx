@@ -64,7 +64,7 @@ const MoviePlayer: React.FC = () => {
         );
     }
 
-    const embedUrl = movieData ? getEmbedUrl(movieData["Movie Link"] ?? '') : '';
+    const embedUrl = movieData ? getEmbedUrl(movieData.movieLink || '') : '';
 
     return (
         <div className="container mx-auto p-6">
