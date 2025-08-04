@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import MovieCard from './MovieCard';
 
 interface Movie {
-    "Movie Name": string;
-    "movieLink": string;
+    movieName: string;
+    movieLink: string;
 }
 
 interface ApiResponse {
