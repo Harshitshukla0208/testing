@@ -23,7 +23,7 @@ const MovieDashboard: React.FC = () => {
             try {
                 const response = await fetch(`${process.env.REACT_APP_API_URL}/api/movies/get-all-movie`);
                 const data: ApiResponse = await response.json();
-                if (data && data.status && Array.isArray(data.data)) {
+                if (data && typeof data.status === 'boolean' && Array.isArray(data.data)) {
                     setMovies(data.data);
                 }
             } catch (error) {
