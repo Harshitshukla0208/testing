@@ -79,7 +79,7 @@ const MoviePlayer: React.FC = () => {
 
             <Card className="max-w-4xl mx-auto">
                 <CardHeader>
-                    <CardTitle>{movieData["Movie Name"]}</CardTitle>
+                   <CardTitle>{movieData.movieName}</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <iframe
