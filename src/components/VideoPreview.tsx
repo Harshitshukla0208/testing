@@ -31,7 +31,7 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({ embedUrl, onLoad }) => {
     return (
         <div className="relative">
             <iframe
-                src={`${embedUrl}?autoplay=0&mute=1`}
+                src={`${embedUrl}?autoplay=1&mute=1`}
                 className="w-full h-48 rounded-lg"
                 allow="autoplay"
                 onLoad={onLoad}
