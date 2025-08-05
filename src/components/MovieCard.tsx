@@ -21,7 +21,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie, onClick }) => {
         if (!fileId) { throw new Error('Invalid drive URL provided.'); } return `https://drive.google.com/file/d/${fileId}/preview`; 
     };
 
-    const embedUrl = (() => { try { return getEmbedUrl(movie.movieLink); } catch (error) { console.error(error); return ''; } })();
+    const embedUrl = (() => { try { return getEmbedUrl(movie.movieLink); } catch (error) { console.error(error); return 'https://example.com/error'; } })();
 
     return (
         <Card
