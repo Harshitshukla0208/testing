@@ -14,7 +14,7 @@ interface Movie {
 
 const MovieCard: React.FC<MovieCardProps> = ({ movie, onClick }) => {
     const [showPreview, setShowPreview] = useState(false);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false); // Set to false initially and manage loading state in VideoPreview.
 
     const getEmbedUrl = (driveUrl: string): string => {
         const fileId = driveUrl.match(/\/d\/(.+?)\//)?.[1];
