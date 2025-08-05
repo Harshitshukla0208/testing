@@ -25,7 +25,7 @@ const MoviePlayer: React.FC = () => {
         const fetchMovie = async () => {
             try {
                 const response = await fetch(
-                    `${process.env.REACT_APP_API_URL}/api/movies/get-movie?movie_name=${encodeURIComponent(movieName || '')}`
+                    `${process.env.REACT_APP_API_URL}/api/movies/get-movie?movie_name=${encodeURIComponent(movieName?.trim() || '')}`
                 );
                 const data: ApiResponse = await response.json();
                 if (data.status && !Array.isArray(data.data)) {
