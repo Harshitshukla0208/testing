@@ -1,7 +1,7 @@
 {
   "name": "lakshay-proj",
   "private": true,
-  "description": "A brief description of the project goes here."
+  "description": "A brief description of the project goes here.",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
