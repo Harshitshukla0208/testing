@@ -17,7 +17,7 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({ embedUrl, onLoad }) => {
         if (isPlaying) {
             videoRef.current.pause();
         } else {
-            videoRef.current.play();
+            videoRef.current.play().then(() => { videoRef.current.muted = isMuted; });
         }
         setIsPlaying(prev => !prev);
     };
